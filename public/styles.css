@@ -1,0 +1,91 @@
+#page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+}
+
+#song-container {
+    display: flex;
+    align-items: center;
+    max-width: 510px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#song-art {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: 'Circular Std', 'Proxima Nova', Arial, sans-serif;
+}
+
+#song-name, #artist-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+}
+
+#artist-name {
+    font-size: 17px;
+    color: #ddd;
+    white-space: nowrap;;
+    margin-top: 4px;
+}
+
+@keyframes scroll-left {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+#song-name.scroll, #artist-name.scroll {
+    animation: scroll-left 10s linear infinite;
+}
+
+#login-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#login-btn:hover {
+    background-color: #1ED760;
+}
+
+#author-name {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}

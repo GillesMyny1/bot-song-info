@@ -1,6 +1,6 @@
 # Spotify Currently Playing Song Info
 
-This web application fetches the album art, song name, and song artists of the tracking currently playinh on Spotify and displays it as an animation.
+This web application fetches the album art, song name, and song artists of the song currently playing on Spotify and displays it as an animation.
 
 ## Features
 

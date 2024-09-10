@@ -146,9 +146,9 @@ async function getTrackInfo() {
       });
   
       if (playbackStateResponse.data && playbackStateResponse.data.item) {
-        const songArt = playbackStateResponse.data.item.album.images[0].url || '';
-        const songName = playbackStateResponse.data.item.name || 'Song not currently playing';
-        const artistName = playbackStateResponse.data.item.artists.map(artist => artist.name).join(', ') || '...';
+        const songArt = playbackStateResponse.data.item.album.images[0].url;
+        const songName = playbackStateResponse.data.item.name;
+        const artistName = playbackStateResponse.data.item.artists.map(artist => artist.name).join(', ');
   
         console.log('Song art:', songArt);
         console.log('Song name:', songName);
@@ -159,7 +159,10 @@ async function getTrackInfo() {
       }
     } catch (error) {
       console.error('Error fetching song info:', error.response ? error.response.data : error.message);
-      throw new Error('Failed to fetch song info');
+      const songArt = 'https://i.imgur.com/HExaG5B.png';
+      const songName = 'nothing playing';
+      const artistName = '...';
+      return [songArt, songName, artistName];
     }
   }
   

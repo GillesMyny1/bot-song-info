@@ -31,7 +31,7 @@
     width: 400px;
     height: 100px;
     padding: 0 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); /* Background Color of Song Text Box */
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);

@@ -68,4 +68,4 @@ This web application fetches the album art, song name, and song artists of the s
 
 ### Changing the color of the text background
 
-In `styles.css` please change the respective commented line in `#trackInfo` to your desired color name, number, or hex code.
+In `styles.css` please change the respective commented line in `#song-info` to your desired color name, number, or hex code.
